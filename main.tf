@@ -2,7 +2,7 @@ provider "aws" {
   region = "us-east-2"
   }
 resource "aws_s3_bucket" "b" {
-  bucket = "sandp-global"
+  bucket = "${var.s3_bucket_name}"
   tags = {
     Name = "sandp-global"
     Environment = "Dev"
