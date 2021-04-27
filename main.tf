@@ -1,7 +1,7 @@
 provider "aws" {
   region = "us-east-2"
   }
-resource "aws_s3_bicket" "b" {
+resource "aws_s3_bucket" "b" {
   bucket = "sandp-global"
   tags = {
     Name = "sandp-global"
